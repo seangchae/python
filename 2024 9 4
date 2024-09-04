@@ -1,0 +1,32 @@
+##print("apple")
+##print("juice")
+##print("apple","juice")
+##print("apple","juice",sep='~')
+##print("apple","juice",end=' is ')
+##print("tasty")
+##print("What's your favorite juice?")
+##print(input("What's your favorite juice?"))
+
+##print("동해물과 백두산이\n마르고 닳도록")
+##print("\t하느님이 보우하사 \"우리나라\"만세")
+##print(input("What's your name?:"))
+
+##import turtle
+##turtle.shape("turtle")
+##turtle.write("Welcome to Pytohn world!",True,font=("Arial","20","bold"))
+##turtle.circle(100,steps=5)
+##turtle.done()
+##             
+            
+##print(input("이름이 뭐야?"))
+##print(input("좋아하는 색깔은 뭐야?"))
+##print(input("좋아하는 가수는 누구야?"))
+##print(input("제일 친한 친구는 누구야?"))
+
+##import turtle
+##turtle.shape("turtle")
+##turtle.circle(100)
+##turtle.circle(150)
+##turtle.circle(200)
+##turtle.done()
+
