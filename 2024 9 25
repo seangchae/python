@@ -1,0 +1,156 @@
+##print("HelloWorld!")
+##print("7은 정수이다.")
+##print("%d는 정수이다."%7)
+##a=int(input())
+##print("%d는정수이다."%a)
+##a=float(input())
+##print("%.1f는정수이다."%a)
+##name=input("이름:")
+##age=int(input("나이:"))
+##height=float(input("키:"))
+##print("==자기소개하기==")
+##print("이름: %s"%name)
+##print("나이: %d"%age)
+##print("키: %.1f"%height)
+##month=int(input('월:'))
+##day=int(input('일:'))
+##print("%d월 %d일" %(month,day))
+##a=int(input("a 정수입력:"))
+##b=int(input("b 정수입력:"))
+##c=int(input("c 정수입력:"))
+##print("세 정수의 평균은 %0.2f입니다." %((a+b+c)/3))
+##L=int(input("L판매개수:"))
+##M=int(input("M판매개수:"))
+##S=int(input("S판매개수:"))
+###sum=총 매출 저장 변수
+##sum=2500*L
+##sum=sum+1000*M
+##sum=sum+500*S
+##print("오늘의 총 매출은 %d원 입니다." %sum)
+##a=int(input())
+##b=int(input())
+##print("%d - %d = %d" %(a,b,a-b))
+##print("%d * %d=%d"%(a,b,a*b))
+##print("%d / %d=%d"%(a,b,a/b))
+##print("%d // %d=%d"%(a,b,a//b))
+##print("%d %% %d=%d"%(a,b,a%b))
+##a=int(input("심부름 횟수:"))
+##b=int(input("안마횟수:"))
+##c=int(input("집안일 횟수:"))
+###sum=다음주 용돈
+##sum=500*a
+##sum=sum+700*b
+##sum=sum+100*c
+##print("다음주 용돈:%d원" %(sum))
+##import turtle
+##t=turtle.Turtle()
+###정사각형 그리기 1
+##t.setx(100)
+##t.sety(100)
+##t.setx(0)
+##t.sety(0)
+###정사각형그리기 2
+##t.goto(100,0)
+##t.goto(100,100)
+##t.goto(0,100)
+##t.goto(0,0)
+##
+##t.clear()
+###정삼각형그리기1
+##t.setheading(120)
+##t.forward(100)
+##t.setheading(240)
+##t.forward(100)
+##t.home()
+##turtle.done
+##import turtle
+##t=turtle.Turtle()
+##t.goto(100,60)
+##t.goto(100,-60)
+##t.goto(-100,60)
+##t.goto(-100,-60)
+##t.goto(0,0)
+##import turtle
+##t=turtle.Turtle()
+###정사각형 그리기
+##t.forward(100)
+##t.left(90)
+##t.forward(100)
+##t.left(90)
+##t.forward(100)
+##t.left(90)
+##t.forward(100)
+###정삼각형 그리기
+##t.right(90)
+##t.forward(100)
+##t.right(60)
+##t.backward(100)
+##t.right(60)
+##t.forward(100)
+##turtle.done
+
+##import turtle
+##t=turtle.Turtle()
+##t.shape('turtle')
+##r=50
+##t.circle(r)
+##t.goto(100,0)
+##r=r+30
+##t.circle(r)
+##t.goto(200,0)
+##r=r+30
+##t.circle(r)
+
+##import turtle
+##t=turtle.Turtle()
+##t.shape('turtle')
+##r=50
+##t.circle(r)
+##t.penup()
+##t.goto(100,0)
+##t.pendown()
+##r=r+30
+##t.circle(r)
+##t.penup()
+##t.goto(200,0)
+##t.pendown()
+##r=r+30
+##t.circle(r)
+
+##import turtle
+##t=turtle.Turtle()
+##t.goto(0,100)
+##t.goto(20,100)
+##t.goto(0,0)
+##t.goto(100,0)
+##t.goto(100,-20)
+##t.goto(0,0)
+##t.goto(0,-100)
+##t.goto(-20,-100)
+##t.goto(0,0)
+##t.goto(-100,0)
+##t.goto(-100,20)
+##t.goto(0,0)
+
+##r=int(input("집의 크기를 입력하세요:"))
+##import turtle
+##t=turtle.Turtle()
+##t.goto(r,0)
+##t.goto(r,-r)
+##t.goto(0,-r)
+##t.goto(0,0)
+##t.left(60)
+##t.forward(r)
+##t.right(120)
+##t.forward(r)
+##t.home()
+
+
+
+
+
+
+
+
+
+
