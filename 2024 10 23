@@ -1,0 +1,156 @@
+##print('Hello World!')
+
+##x=True
+##y=False
+##print('x:%s,y:%s'%(x,y))
+##print('x and y=',x and y)
+##print('x or y=',x or y)
+##print('not x=',not x)
+##print('not y=',not y)
+
+##score=80
+##if score<=60 and score<=100:
+##    print("Pass")
+##else:
+##    print("Fail")
+        
+##a=int(input())
+##b=int(input())
+##c=int(input())
+##print(a>=140 and b>=140 and c>=140)
+
+##score=int(input('score'))
+##if score>=60:
+##    print('Pass')
+##else:
+##    print('Fail')
+
+##a=int(input())
+##if a%2==0:
+##    print('Even')
+##if a%2>0:
+##    print('Odd')
+
+##a=int(input())
+##if a%2==0:
+##    print('Even')
+##else:
+##    print('Odd')
+    
+##y=int(input())
+##if (y%4==0 and y%100>0) or y%400==0:
+##    print('leap year')
+##else:
+##    print('common year')
+
+##case=['Homework','Eating','Sleeping']
+##if 'Homework' in case:
+##    print('I have to do homework')
+##else:
+##    print("It's breaking time")
+
+##a=input()
+##if a==("M"):
+##    print("MAN")
+##elif a=="W":
+##    print("WOMAN")
+##else:
+##    print("What?")
+
+##a=int(input())
+##if 0<a and a<7:
+##    print("First half")
+##elif 13>a and a>6:
+##    print("Second half")
+##else:
+##    print('What?')
+
+##import random
+##com=random.randint(1,2)
+##user=int(input('odd:1,even:2\n'))
+##print('COM(%d):USER(%d)' %(com,user))
+##if com==user:
+##    print('Correct')
+##else:
+##    print('Incorrect')
+
+##import random
+##com=random.randint(1,2)
+##user=int(input('odd:1,even:2\n'))
+##if com==1:
+##    com="odd"
+##else:
+##    com="even"
+##if user==1:
+##    user="odd"
+##else:
+##    user="even"
+##print('COM(%s):USER(%s)' %(com,user))
+##if com==user:
+##    print('Correct')
+##else:
+##    print('Incorrect')
+
+##import random
+##com=random.randint(1,3)
+##user=int(input('가위:1,바위:2,보:3'))
+##if com==1:
+##    com="가위"
+##elif com==2:
+##    com="바위"
+##else:
+##    com="보"
+##if user==1:
+##    user="가위"
+##elif user==2:
+##    user="바위"
+##else:
+##    user="보"
+##print('COM(%s):USER(%s)' %(com,user))
+##if com==user:
+##    print('Draw')
+##elif com=="가위":
+##    if user=="바위":
+##        print("User Win!")
+##    else:
+##        print('Com Win!')
+##elif com=="바위":
+##    if user=="보":
+##        print("User Win!")
+##    else:
+##        print('Com Win!')
+##elif com=="보":
+##    if user=="가위":
+##        print("User Win!")
+##    else:
+##        print('Com Win!')
+
+##x=int(input())
+##if x>=90:
+##    print("A")
+##elif x>=80:
+##    print("B")
+##elif x>=70:
+##    print("C")
+##elif x>=60:
+##    print("D")
+##else:
+##    print("F")
+
+##x=int(input())
+##y=int(input())
+##if x>0 and y>0:
+##    print("1")
+##elif x<0 and y>0:
+##    print("2")
+##elif x<0 and y<0:
+##    print(3)
+##else:
+##    print(4)
+
+######H=int(input())
+######M=int(input())
+######if M<45:
+######    print(H-1,60+M-45)
+######if H<1:
+######  print(23) 
