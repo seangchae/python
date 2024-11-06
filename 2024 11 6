@@ -1,0 +1,145 @@
+##print('Hello World!')
+
+##i=1
+##while i<=10:
+##    print(i,end='')
+##    i+=1
+
+##sum=0
+##i=1
+##while i<=100:
+##    sum +=i
+##    i+=1
+##print(sum)
+
+##i=0
+##while i<10:
+##    i+=1
+##    if i % 2==0:
+##        continue
+##    print(i,end='')
+
+##while True:
+##    ans=input('Shall we close?(y/n)')
+##    if ans=='y':
+##        print('The end')
+##        break
+
+##ans=''
+##while ans!='Yes':
+##    ans=input('Are you ready?')
+##print('going out')
+
+##stamp=0
+##while stamp<10:
+##    stamp+=1
+##    print('스탬프 %d개 적립'%stamp)
+##    if stamp==10:
+##        print('무료 음료 쿠폰 1개 증정')
+
+##i=1
+##while i<=100:
+##    print(i,end=' ')
+##    i+=1
+
+##sum=0
+##a=int(input())
+##i=1
+##while i<=a:
+##    sum+=i
+##    i+=1
+##print(sum)
+
+##i=0
+##while i<=4:
+##    a=int(input('input:'))
+##    if a%5!=0:
+##        print('output :%d' %a)
+##    else:
+##        i+=1
+##        continue
+##    i+=1
+
+##while True:
+##    a=int(input())
+##    if a==0:
+##        break
+
+##cnt=0
+##n=int(input('정수 입력:'))
+##while n>0:
+##    cnt+=1
+##    n//=10
+##print('자릿수:%d' %cnt)
+
+##n=1
+##while n<=20:
+##    if n%10==3 or n%10==6 or n%10==9:
+##        print('X',end='')
+##    else:
+##        print(n,end='')
+##    n+=1
+
+##a=int(input("몇단?"))
+##i=1
+##while i<=9:
+##    print("%d * %d = %d" %(a,i,a*i))
+##    i+=1
+
+##from random import*
+##com = randint(1,100)
+##a=0
+##while a!=com:
+##    a=int(input())
+##    if a<com:
+##        print('up')
+##    elif a>com:
+##        print('down')
+##    else:
+##        print('correct!')
+
+##from random import*
+##com = randint(1,100)
+##while True:
+##    n=int(input())
+##    if n>com:
+##        print('down')
+##    elif n<com:
+##        print('up')
+##    else:
+##        print('correct!')
+##        break
+
+##import sys
+##import pygame
+##from pygame.locals import*
+##
+##pygame.init()
+##
+##screen=pygame.display.set_mode((400,300))
+##
+##pygame.display.set_caption("Tick Tock Timer")
+##
+##CLOCK=pygame.time.Clock()
+##
+##sysfont=pygame.font.SysFont(None,36)
+##
+##timer=0
+##
+##while True:
+##    for event in pygame.event.get():
+##        if event.type==QUIT:
+##            pygame.quit()
+##            sys.exit()
+##
+##    timer+=1
+##
+##    screen.fill((255,255,255))
+##
+##    cnt_txt=sysfont.render('Timer:%d'%timer,True,(0,0,0))
+##
+##    screen.blit(cnt_txt,(140,140))
+##
+##    pygame.display.update()
+##
+##    CLOCK.tick(1)
