@@ -1,0 +1,153 @@
+##print('Hello World!')
+
+##a=int(input())
+##for i in range(a,51):
+##    print(i)
+    
+##a=int(input())
+##b=0
+##for i in range(1,a+1):
+##    if i%3==0:
+##       b+=i
+##print(b)
+
+##max=0
+##for i in range(5):
+##    a=int(input())
+##    if max<=a:
+##        max=a
+##print(max)
+
+##min=99999999999999999
+##for i in range(5):
+##    a=int(input())
+##    if min>=a:
+##        min=a
+##print(min)
+
+##import sys
+##import pygame
+##from pygame.locals import*
+##pygame.init()
+##SCREEN=pygame.display.set_mode((300,300))
+##CLOCK=pygame.time.Clock()
+##BLACK=(0,0,0)
+##WHITE=(255,255,255)
+##sysfont=pygame.font.SysFont(None,36)
+##txt=sysfont.render("",True,BLACK)
+##while True:
+##    SCREEN.fill(WHITE)
+##    for event in pygame.event.get():
+##        if event.type==QUIT:
+##            pygame.quit()
+##            sys.exit()
+##        if event.type==KEYUP:
+##            if event.key==K_UP:
+##                txt=sysfont.render("UP",True,BLACK)
+##            if event.key==K_DOWN:
+##                txt=sysfont.render("DOWN",True,BLACK)
+##            if event.key==K_LEFT:
+##                txt=sysfont.render("LEFT",True,BLACK)
+##            if event.key==K_RIGHT:
+##                txt=sysfont.render("RIGHT",True,BLACK)
+##            if event.key==K_ESCAPE:
+##                pygame.quit()
+##                sys.exit()
+##    SCREEN.blit(txt,(100,120))
+##    pygame.display.update()
+##    CLOCK.tick(60)
+
+
+##import sys
+##import pygame
+##from pygame.locals import*
+##pygame.init()
+##SCREEN=pygame.display.set_mode((600,600))
+##CLOCK=pygame.time.Clock()
+##BLACK=(0,0,0)
+##WHITE=(255,255,255)
+##sysfont=pygame.font.SysFont(None,36)
+##txt=sysfont.render("",True,BLACK)
+##coord=sysfont.render("",True,BLACK)
+##x,y=0,0
+##while True:
+##    SCREEN.fill(WHITE)
+##    for event in pygame.event.get():
+##        if event.type==QUIT:
+##            pygame.quit()
+##            sys.exit()
+##        if event.type==MOUSEBUTTONDOWN:
+##            x,y=event.pos[0],event.pos[1]
+##            coord=sysfont.render("(%d,%d)"%(x,y),True,(0,0,0))
+##            if event.button==1:
+##                txt=sysfont.render("1",True,BLACK)
+##            if event.button==2:
+##                txt=sysfont.render("2",True,BLACK)
+##            if event.button==3:
+##                txt=sysfont.render("3",True,BLACK)
+##            if event.button==4:
+##                txt=sysfont.render("4",True,BLACK)
+##            if event.button==5:
+##                txt=sysfont.render("5",True,BLACK)
+##    SCREEN.blit(txt,(285,220))
+##    SCREEN.blit(coord,(x,y))
+##    pygame.display.update()
+##    CLOCK.tick(60)
+
+##import sys
+##import pygame
+##from pygame.locals import*
+##pygame.init()
+##SCREEN=pygame.display.set_mode((300,300))
+##CLOCK=pygame.time.Clock()
+##BLACK=(0,0,0)
+##WHITE=(255,255,255)
+##sysfont=pygame.font.SysFont(None,36)
+##txt=sysfont.render("",True,BLACK)
+##n=0
+##while True:
+##    SCREEN.fill(WHITE)
+##    for event in pygame.event.get():
+##        if event.type==QUIT:
+##            pygame.quit()
+##            sys.exit()
+##        if event.type==MOUSEBUTTONDOWN:
+##            if event.button==1:
+##                n=0
+##        if event.type==KEYDOWN:
+##            if event.key==K_UP:
+##                n+=10
+##            if event.key==K_DOWN:
+##                n-=10
+##            if event.key==K_LEFT:
+##                n*=10 
+##            if event.key==K_RIGHT:
+##                n//=10 
+##            if event.key==K_ESCAPE:
+##                pygame.quit()
+##                sys.exit()
+##    txt=sysfont.render('%d'%n,True,BLACK)            
+##    SCREEN.blit(txt,(100,120))
+##    pygame.display.update()
+##    CLOCK.tick(60)
+
+##n=int(input())
+##for i in range(n):
+##    for j in range(i+1):
+##        print('*',end='')
+##    print()
+    
+##for i in range(1,6):
+##    for j in range(1,i+1):
+##        print(j,end='   ')
+##    print()
+
+##for i in range(5,0,-1):
+##    for j in range(1,i+1):
+##        print(j,end='   ')
+##    print()
+
+##for i in range(5,0,-1):
+##    for j in range(i,6):
+##        print(j,end='   ')
+##    print()
