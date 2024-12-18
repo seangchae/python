@@ -1,0 +1,118 @@
+##print('Hello World!')
+
+##def f(n):
+##    for i in range(1,n+1):      
+##        for j in range(1,n+1):
+##            print(i*j,end='   ')
+##        print()    
+##a=int(input())
+##f(a)
+
+##from tkinter import*
+##win=Tk()
+##label1=Label(win,text='one')
+##label2=Label(win,text='two')
+##label3=Label(win,text='three')
+##label1.pack()
+##label2.pack()
+##label3.pack()
+##win.mainloop
+
+##from tkinter import*
+##win=Tk()
+##lbl1=Label(win,text='orange',width=20,height=3,relief='solid')
+##lbl2=Label(win,text='banana',font=("Elephant"),bg="Yellow")
+##lbl3=Label(win,text='apple',fg='red')
+##lbl1.pack()
+##lbl2.pack()
+##lbl3.pack()
+##win.mainloop()
+
+##from tkinter import*
+##win=Tk()
+##img=PhotoImage(file='pizza.png')
+##lbl=Label(win,image=img)
+##a= Label(win,text='pizza',bg='Yellow',fg='red')
+##lbl.pack()
+##a.pack()
+##win.mainloop()
+
+##from tkinter import*
+##win=Tk()
+##btn=Button(win,text='Button',bg='red',fg='yellow')
+##btn.pack()
+##win.mainloop()
+
+##from tkinter import*
+##win=Tk()
+##def click():
+##    if btn['text']=="red":
+##        btn['text']="blue"
+##        btn['bg']="blue"
+##    else:
+##        btn['text']="red"
+##        btn['bg']="red"
+##btn=Button(win,text="red",fg="white",bg="red",command=click)
+##btn.pack()
+##win.mainloop()
+
+##from tkinter import*
+##win=Tk()
+##lbl=Label(win,text='hello',bg='orange',fg='white',width=20,height=3,relief='solid')
+##def click():
+##    if lbl['text']=="hello":
+##        lbl['text']="python"
+##        lbl['bg']="green"
+##    else:
+##        lbl['text']="hello"
+##        lbl['bg']="orange"
+##btn=Button(win,text='Button',command=click)
+##lbl.pack()
+##btn.pack()
+##win.mainloop()
+
+##from tkinter import*
+##win=Tk()
+##def message(event):
+##    lbl['text']=entry.get()
+##entry=Entry(win)
+##entry.bind("<Motion>",message)
+##entry.bind("<Delete>",message)
+##entry.bind("<Return>",message)
+##entry.pack()
+##lbl=Label(win,text='')
+##lbl.pack()
+##win.mainloop()
+
+##from tkinter import*
+##win=Tk()
+##win.title("grid")
+##lbl1=Label(win,width=10,height=5,bg="red")
+##lbl2=Label(win,width=10,height=5,bg="orange")
+##lbl3=Label(win,width=10,height=5,bg="yellow")
+##lbl4=Label(win,width=10,height=5,bg="green")
+##lbl5=Label(win,width=10,height=5,bg="blue")
+##lbl6=Label(win,width=10,height=5,bg="purple")
+##lbl1.grid(row=0,column=0)
+##lbl2.grid(row=0,column=1)
+##lbl3.grid(row=0,column=2)
+##lbl4.grid(row=1,column=0)
+##lbl5.grid(row=1,column=1)
+##lbl6.grid(row=1,column=2)
+##win.mainloop()
+
+##from tkinter import*
+##win=Tk()
+##def message(event):
+##    result=int(lbl['text'])+int(entry.get())
+##    lbl['text']=result
+##def clear():
+##    lbl['text']=0
+##lbl=Label(win,text=('0'))
+##entry=Entry(win)
+##btn=Button(win,text=('clear'),command=clear)
+##entry.bind("<Return>",message)
+##lbl.pack()
+##entry.pack()
+##btn.pack()
+##win.mainloop()
