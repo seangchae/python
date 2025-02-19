@@ -1,0 +1,193 @@
+##print("Hello World!")
+
+##from tkinter import*
+##win = Tk()
+##canvas = Canvas(win, bg = "yellow", width = 100, height = 100)
+##canvas.pack()
+##win.mainloop()
+
+##from tkinter import*
+##win = Tk()
+##canvas = Canvas(win, bg = "white", width = 500, height = 100)
+##canvas.create_line(0, 50, 500, 50, fill = "blue", width = 5)
+##canvas.pack()
+##win.mainloop()
+
+##from tkinter import*
+##win = Tk()
+##canvas = Canvas(win, bg = "white", width = 500, height = 100)
+##canvas.create_line(100, 50, 400, 50, fill = "green", width = 1)
+##canvas.pack()
+##win.mainloop()
+
+##from tkinter import*
+##win = Tk()
+##canvas = Canvas(win, bg = "white", width = 400, height = 400)
+##canvas.create_line(200, 50, 200, 350, fill = "red", width = 5)
+##canvas.pack()
+##win.mainloop()
+
+##from tkinter import*
+##win = Tk()
+##canvas = Canvas(win, bg = "white", width = 500, height = 100)
+##canvas.pack()
+##x1, y1 = 0, 0
+##x2, y2 = 500, 0
+##for i in range(3) :
+##    y1 += 30
+##    y2 = y1
+##    canvas.create_line(x1, y1, x2, y2, fill = "red", width = 3)
+##win.mainloop()
+
+##from tkinter import*
+##win = Tk()
+##canvas = Canvas(win, bg = "white", width = 500, height = 100)
+##x1, y1 = 0, 0
+##x2, y2 = 0, 100
+##for i in range(10) :
+##    x1 += 45
+##    x2 = x1
+##    canvas.create_line(x1, y1, x2, y2, fill = "red", width = 3)
+##canvas.pack()
+##win.mainloop()
+
+##from tkinter import*
+##win = Tk()
+##canvas = Canvas(win, bg = "white", width = 475, height = 475)
+##x1, y1 = 10, 10
+##x2, y2 = 10, 460
+##for i in range(10) :
+##    canvas.create_line(x1, y1, x2, y2, fill = "red", width = 3)
+##    x1 += 50
+##    x2 = x1
+##x1, y1 = 10, 10
+##x2, y2 = 460, 10
+##for j in range(10) :
+##    canvas.create_line(x1, y1, x2, y2, fill = "blue", width = 3)
+##    y1 += 50
+##    y2 = y1    
+##canvas.pack()
+##win.mainloop()
+
+##from tkinter import*
+##win = Tk()
+##canvas = Canvas(win, bg = "white", width = 475, height = 475)
+##for i in range(10, 500, 50) :
+##    x1, y1 = i, 10
+##    x2, y2 = x1, 460
+##    canvas.create_line(x1, y1, x2, y2, fill = "red", width = 3)
+##    canvas.create_line(y1, x1, y2, x2, fill = "blue", width = 3)
+##canvas.pack()
+##win.mainloop()
+
+##from tkinter import*
+##pen_color = "black"
+##def paint(event) :
+##    global pen_color
+##    x1,y1 = event.x, event.y
+##    x2, y2 = x1 + 5, y1 + 5
+##    canvas.create_line(x1, y1, x2, y2, width = 3, fill = pen_color)
+##def change_color() :
+##    global pen_color
+##    pen_color = "red"
+##win = Tk()
+##canvas = Canvas(win, bg = "white", width = 500, height = 200)
+##btn = Button(win, text = "red", command = change_color)
+##canvas.pack()
+##btn.pack()
+##win.bind("<B1-Motion>",paint)
+##win.mainloop()
+
+from tkinter import*
+pen_size = 2
+pen_color = "black"
+w = 13
+h = 2
+tool = 'pen'
+shape_size = 10
+shape_color = 'black'
+def change_tool(t):
+    global tool
+    tool = t
+    
+def draw_shape(event):
+    global shape_size, shape_color
+    x1, y1 = event.x, event.y
+    x2, y2 = event.x + shape_size, event.y + shape_size
+    if tool == "circle" :
+        canvas.create_oval(x1,y1,x2,y2,fill=shape_color)
+    elif tool == "square" :
+        canvas.create_rectangle(x1,y1,x2,y2,fill=shape_color)
+    elif tool == "triangle" :
+        canvas.create_polygon(x1,y1,(x1-shape_size/2),y1+shape_size,(x1+shape_size/2),y1+shape_size, fill = shape_color)
+
+    
+def paint(event) :
+    x1, y1 = event.x, event.y
+    x2, y2 = x1+5, y1+5
+    canvas.create_line(x1,y1,x2,y2,fill = pen_color, width = pen_size)
+def change_color(color) :
+    global pen_color,shape_color
+    if tool == "pen" :
+        pen_color = color
+    elif tool == "canvas" :
+        canvas['bg'] = color
+    else :
+        shape_color = color
+    
+def change_size(size) :
+    global pen_size,shape_size
+    if tool == "pen" :
+        if size == "plus" :
+            pen_size +=1
+        elif size == "minus":
+            pen_size -=1
+            if pen_size < 1 :
+                pen_size = 0
+    else:
+        if size == "plus":
+            shape_size +=10
+        elif size == "minus":
+            shape_size -= 10
+            if shape_size < 20 :
+                shape_size = 10
+def clear_canvas() :
+    canvas.delete("all")
+    
+
+win = Tk()
+canvas = Canvas(win, bg = "white", width = 500, height = 500)
+btn_white = Button(win, text = "white", width = w, height = h, bg = "white", command = lambda : change_color("white"))
+btn_black = Button(win, text = "black", width = w, height = h, bg = "black", fg = "white", command = lambda : change_color("black"))
+btn_blue = Button(win, text = "blue", width = w, height = h, bg = "blue", fg = "white", command = lambda : change_color("blue"))
+btn_green = Button(win, text = "green", width = w, height = h, bg = "green", fg = "white", command = lambda : change_color("green"))
+btn_yellow = Button(win, text = "yellow", width = w, height = h, bg = "yellow", command = lambda : change_color("yellow"))
+btn_red = Button(win, text = "red", width = w, height = h, bg = "red", fg = "white", command = lambda : change_color("red"))
+btn_plus = Button(win, text = "+", width = w, height = h, bg = "white", command = lambda : change_size("plus"))
+btn_minus = Button(win, text = "-", width = w, height = h, bg = "white", command = lambda : change_size("minus"))
+btn_clear = Button(win, text = "clear", width = w, height = h, bg = "white", command = clear_canvas)
+btn_canvascolor = Button(win, text = "canvas\ncolor", width = w, height = h, bg = "white", command = lambda : change_tool("canvas"))
+btn_pencolor = Button(win, text = "pen\ncolor", width = w, height = h, bg = "black", fg = "white", command = lambda : change_tool("pen"))
+btn_circle = Button(win, text = "○", width = w, height = h, bg = "white", command = lambda : change_tool("circle"))
+btn_square = Button(win, text = "□", width = w, height = h, bg = "white", command = lambda : change_tool("square"))
+btn_triangle = Button(win, text = "△", width = w, height = h, bg = "white", command = lambda : change_tool("triangle"))
+btn_fillcolor = Button(win, text = "fill\ncolor", width = w, height = h, bg = "white")
+canvas.grid(row = 0, column = 0, columnspan = 5)
+btn_white.grid(row = 2, column = 1)
+btn_black.grid(row = 1, column = 1)
+btn_blue.grid(row = 1, column = 2)
+btn_green.grid(row = 1, column = 3)
+btn_yellow.grid(row = 2, column = 3)
+btn_red.grid(row = 2, column = 2)
+btn_plus.grid(row = 1, column = 4)
+btn_minus.grid(row = 2, column = 4)
+btn_clear.grid(row = 3, column = 4)
+btn_canvascolor.grid(row = 1, column = 0)
+btn_pencolor.grid(row = 2, column = 0)
+btn_fillcolor.grid(row = 3, column = 0)
+btn_circle.grid(row = 3, column = 1)
+btn_square.grid(row = 3, column = 2)
+btn_triangle.grid(row = 3, column = 3)
+win.bind("<B1-Motion>",paint)
+win.bind("<Double-Button-1>", draw_shape)
+win.mainloop()
